@@ -1,0 +1,23 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: #000; 
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__image {
+    width: auto;
+    max-width: none;
+    height: 120px; 
+  }
+}

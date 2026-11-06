@@ -1,0 +1,18 @@
+$primary: #ff6060;
+$light: #f6f6f6;
+$empty: #e3e3e3;
+$text: #000;
+$mobile: 768px;
+$tablet: 1024px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}

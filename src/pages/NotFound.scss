@@ -1,0 +1,48 @@
+@use "../styles/variables" as *;
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 100px 0 60px;
+  text-align: center;
+
+  @include mobile {
+    margin: 60px 0 40px;
+  }
+
+  &__code {
+    color: $primary;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 1;
+
+    @include mobile {
+      font-size: 96px;
+    }
+  }
+
+  &__message {
+    color: $primary;
+    font-size: 36px;
+    font-weight: 500;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    margin-top: 80px;
+    color: $primary;
+    font-size: 18px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    @include mobile {
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  }
+}
